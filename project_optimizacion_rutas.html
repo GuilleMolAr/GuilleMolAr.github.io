@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optimización de Rutas con Python</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Optimización de Rutas con Python</h1>
-    <p>Este proyecto consiste en la optimización de rutas de distribución basadas en zonas, volumen de carga y capacidad de las unidades de distribución. Se usaron algoritmos de optimización para generar rutas eficientes que minimicen la distancia y el tiempo.</p>
-    <h2>Objetivos</h2>
-    <ul>
-        <li>Generar rutas de distribución óptimas basadas en coordenadas geográficas.</li>
-        <li>Minimizar la distancia recorrida por las unidades de distribución.</li>
-    </ul>
-    <h2>Herramientas utilizadas</h2>
-    <ul>
-        <li>Python</li>
-        <li>Pandas</li>
-        <li>Google Maps API</li>
-        <li>Ortools</li>
-    </ul>
-    <h2>Resultado</h2>
-    <p>Se lograron rutas más eficientes, lo que permitió una reducción de costos y tiempos de entrega.</p>
-    <a href="index.html">Back to Portfolio</a>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white text-center p-6">
+        <h1 class="text-3xl font-bold">Optimización de Rutas con Python</h1>
+    </header>
+
+    <!-- Content Section -->
+    <section class="container mx-auto p-6 mt-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-gray-800">Descripción del Proyecto</h2>
+        <p class="mt-4 text-gray-600">
+            Algoritmo para optimizar la asignación de rutas en entregas con múltiples zonas y unidades, utilizando coordenadas de latitud y longitud para minimizar el tiempo y distancia de los recorridos.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-6">Detalles Técnicos</h3>
+        <ul class="list-disc list-inside text-gray-600 mt-4">
+            <li>Uso de Python y OR-Tools para la optimización de rutas</li>
+            <li>Consideración de restricciones de volumen y capacidad por vehículo</li>
+            <li>Visualización de rutas optimizadas en un mapa</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-6">Resultados</h3>
+        <p class="text-gray-600 mt-4">
+            Reducción en el tiempo total de entrega y optimización en el uso de recursos logísticos.
+        </p>
+
+        <a href="index.html" class="inline-block bg-blue-500 text-white py-2 px-4 rounded mt-6 hover:bg-blue-600">Volver al Portafolio</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-6">
+        <p>&copy; 2024 Will's Data Science Portfolio</p>
+    </footer>
 </body>
 </html>
