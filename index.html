@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guillermo Data Science Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-        .content {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .projects {
-            margin-top: 2em;
-        }
-        .projects a {
-            text-decoration: none;
-            color: #0066cc;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Will's Data Science Portfolio</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="header">
-        <h1>Will's Data Science Portfolio</h1>
-    </div>
-    <div class="content">
-        <h2>About Me</h2>
-        <p>Hello! I'm Guillermo Daniel Molar, a data analyst and freelancer specializing in data analysis, ETL, and visualization. Here's a collection of my work.</p>
-        <div class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="project_control_envios.html">Control de Envíos con Google Sheets</a></li>
-                <li><a href="project_normalizacion_localidades.html">Normalización de Localidades con Python y Excel</a></li>
-                <li><a href="project_optimizacion_rutas.html">Optimización de Rutas con Python</a></li>
-                <li><a href="project_vba_automatizaciones.html">Automatización con VBA</a></li>
-            </ul>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white text-center p-6">
+        <h1 class="text-4xl font-bold">Will's Data Science Portfolio</h1>
+        <p class="text-xl mt-2">Data Analyst | ETL | Data Visualization</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto p-6 mt-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-gray-800">About Me</h2>
+        <p class="mt-4 text-gray-600">
+            ¡Hola! Soy Will, un analista de datos freelancer especializado en análisis de datos, procesos de ETL (Extracción, Transformación y Carga) y visualización de datos. Aquí presento una selección de algunos de mis proyectos más destacados.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container mx-auto p-6 mt-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800">Control de Envíos con Google Sheets</h3>
+                <p class="mt-2 text-gray-600">Sistema de control de envíos con lector de códigos de barra utilizando Google Sheets.</p>
+                <a href="project_control_envios.html" class="inline-block bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">Ver Proyecto</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800">Normalización de Localidades con Python y Excel</h3>
+                <p class="mt-2 text-gray-600">Automatización del proceso de normalización de datos de localidades utilizando Python y Excel.</p>
+                <a href="project_normalizacion_localidades.html" class="inline-block bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">Ver Proyecto</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800">Optimización de Rutas con Python</h3>
+                <p class="mt-2 text-gray-600">Algoritmo para optimizar la asignación de rutas en entregas con múltiples zonas y unidades.</p>
+                <a href="project_optimizacion_rutas.html" class="inline-block bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">Ver Proyecto</a>
+            </div>
+            <!-- Project 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800">Automatización con VBA</h3>
+                <p class="mt-2 text-gray-600">Automatización de procesos de Excel con Visual Basic para Aplicaciones (VBA) para análisis de datos.</p>
+                <a href="project_vba_automatizaciones.html" class="inline-block bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600">Ver Proyecto</a>
+            </div>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Will's Portfolio</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-6">
+        <p>&copy; 2024 Will's Data Science Portfolio</p>
     </footer>
 </body>
 </html>
